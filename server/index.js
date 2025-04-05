@@ -8,14 +8,14 @@ const port = 9000;
 
 app.use(express.static(path.resolve(__dirname, "../dist/public")));
 
-app.get("*", (req, res) => {
+app.get("*", (_req, res) => {
   const content = ReactDOMServer.renderToString(<App />);
 
   const html = `
     <!DOCTYPE html>
     <html>
       <head>
-        <title>Express SSR サンプル</title>
+        <title>Express SSR!!!</title>
         <meta charset="utf-8">
       </head>
       <body>
