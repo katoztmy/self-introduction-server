@@ -5,7 +5,7 @@ module.exports = {
   target: "node",
   // entry: './server/index.js' - ビルドの開始点となるファイルを指定
   entry: path.join(__dirname, "server", "index.js"),
-
+  mode: "development",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "server.js",
