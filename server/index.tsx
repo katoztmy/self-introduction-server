@@ -1,8 +1,13 @@
-const express = require("express");
-const React = require("react");
-const ReactDOMServer = require("react-dom/server");
-const path = require("path");
-const { App } = require("../src/components/App");
+import React from "react";
+import App from "../src/components/App";
+import express from "express";
+import ReactDOMServer from "react-dom/server";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
 const port = 9000;
 
